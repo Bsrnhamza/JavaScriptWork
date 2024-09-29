@@ -29,3 +29,6 @@ sonuc =z!= t ; //false
 sonuc =z < t ;
 sonuc =z > t ;
 //!Mantıksal
+sonuc =(z<t)&&(x>y);
+sonuc =(z<t)||(x>y);
+sonuc = !(z<t);//tam tersi
