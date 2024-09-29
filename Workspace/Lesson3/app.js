@@ -1,28 +1,26 @@
-//! DEĞİŞKEN TANIMLAMA 
-
-// var let const
-//! var:
-
-// Fonksiyon seviyesinde tanımlanır (block scope değil, function scope'a sahiptir).
-// Aynı isimle tekrar tanımlanabilir.
-// Hoisting (değişkenin tanımlanmadan önce kullanılabilmesi) uygulanır, ancak değeri undefined olur.
-//! let:
-
-// Blok seviyesinde tanımlanır (block scope'a sahiptir, {} içindeki alanlarda geçerlidir).
-// Aynı isimle tekrar tanımlanamaz.
-// Hoisting uygulanır, ancak tanımlanmadan önce kullanılamaz (temporal dead zone).
-//! const:
-
-// let gibi blok seviyesinde tanımlanır.
-// Değişkenin değeri sonradan değiştirilemez (immutable). Ancak, objeler ve diziler için bu yalnızca referansı korur; içindekiler değiştirilebilir.
-// Aynı isimle tekrar tanımlanamaz ve hoisting uygulanır.
-
+//Değiken türleri
+//TODO Primitive Types 
 var x;
-x="Mustafa";
-console.log(x);
+console.log(typeof x)
 
-let y="Mustafa Filiz";
-console.log(y);
+var y=null;
+ 
+var name="Abc";    
 
-const z="@abc";
-console.log(z);
+var age=14;
+
+var online = true;
+
+//TODO Reference Types - Objects
+
+var cars = ['Volvo','Mercedes','Bmw']
+
+var person={
+    name :"hamza",
+    age:21
+}
+
+var isAlive = function(){
+    return 0;
+}
+console.log(typeof isAlive);
