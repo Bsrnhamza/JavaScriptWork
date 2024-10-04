@@ -1,33 +1,35 @@
-// Todo: Object Literals ile Kişi Bilgilerini Güncelleme Uygulaması
+// Todo: Dizileri Ekrana Yazdırma
 
-// Kişi nesnesi
-let person = {
-    firstName: "Hamza",
-    lastName: "Başaran",
-    age: 21,
-};
+let cars = ["bmw", "mercedes", "audi"];  // Araç markalarından oluşan bir dizi
 
-// Kişi bilgilerini güncelleme fonksiyonu
-function updatePerson(newFirstName, newLastName, newAge) {
-    person.firstName = newFirstName;  // Yeni isim
-    person.lastName = newLastName;    // Yeni soyisim
-    person.age = newAge;               // Yeni yaş
+// Kişi nesnelerinden oluşan bir dizi
+let person = [
+    {name: "Hamza", lastName: "Başaran"},
+    {name: "Ahmet", lastName: "Başaran"}
+];
+
+// 1. for döngüsü ile araçları yazdırma
+for (let i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+} 
+
+// 2. for-in döngüsü ile index ve değeri yazdırma
+for (let i in cars) {
+    console.log(`Index: ${i}, Value: ${cars[i]}`);
 }
 
-// Kullanıcıdan yeni bilgileri alarak güncelle
-updatePerson("Ali", "Yılmaz", 25);
+console.log(typeof cars);  // cars dizisinin türünü yazdırma
 
-// Güncellenmiş kişi bilgilerini konsola yazdır
-console.log("Güncellenmiş Kişi Bilgileri:");
-console.log(`İsim: ${person.firstName}`);
-console.log(`Soyisim: ${person.lastName}`);
-console.log(`Yaş: ${person.age}`);
+// 3. forEach metodu ile her bir aracı yazdırma
+cars.forEach(function(item) {
+    console.log(item); 
+});
 
-// Kişi nesnesinin türünü kontrol et
-console.log("Kişi nesnesinin türü:", typeof person);
+console.log(person);  // Kişi nesnelerini yazdırma
 
-//! Güncellenmiş Kişi Bilgileri:
-//! İsim: Ali
-//! Soyisim: Yılmaz
-//! Yaş: 25
-//! Kişi nesnesinin türü: object
+// 4. for döngüsü ile kişi isimlerini yazdırma
+for (let i = 0; i < person.length; i++) {
+    console.log(person[i].name);   
+}
+
+console.log(typeof person);  // person dizisinin türünü yazdırma
