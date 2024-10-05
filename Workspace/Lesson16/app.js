@@ -1,26 +1,15 @@
-//Todo : functions  
+// TODO: Function Lesson 2
 
-function square(number)
-{
-    return number*number;
+// 1. Normal Fonksiyon Tanımı
+function sum(a, b) {
+    var c = a + b;  // a ve b'nin toplamı
+    return c;  // Sonucu döndür
 }
+console.log("10 + 20 =", sum(10, 20));  // sum fonksiyonu ile toplama işlemi
 
-let x = square(2);
-let y = square(4);
-let z = square(3);
-
-console.log(x);
-console.log(y);
-console.log(z);
-
-function total(number1,number2)
-{
-    function squareTwo(a)
-    {
-        return a*a;
-    }
-    return squareTwo(number1)+squareTwo(number2);
-}
-let result = total(3,4);
-
-console.log(result);
+// 2. Fonksiyon İfadesi (Anonymous Function)
+const sum2 = function(x, y) {
+    var z = x + y;  // x ve y'nin toplamı
+    return z;  // Sonucu döndür
+};
+console.log("1 + 2 =", sum2(1, 2));  // sum2 fonksiyonu ile toplama işlemi
