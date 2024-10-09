@@ -1,2 +1,2 @@
 # JavaScriptWork
-I'm learning JavaScript... 🚀
+We are learning javascript together 🚀
